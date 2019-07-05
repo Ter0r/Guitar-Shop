@@ -1,0 +1,247 @@
+/* Project imports */
+@import "mixins";
+@import "custom_variables";
+@import "/home/porfirev/internature/my-proj/Guitar Custom Shop/bootstrap/scss/bootstrap.scss";
+@import "/home/porfirev/internature/my-proj/Guitar Custom Shop/fontawesome/scss/fontawesome.scss";
+@import "/home/porfirev/internature/my-proj/Guitar Custom Shop/fontawesome/scss/solid.scss";
+@import "/home/porfirev/internature/my-proj/Guitar Custom Shop/fontawesome/scss/brands.scss";
+
+
+
+.container-fluid {
+
+  padding-right: 0;
+  padding-left: 0;
+  font-family: $Regular_Font;
+
+  header {
+    font-family: $Heading_Font;
+    color: $TextIcons_Color;
+  }
+
+  a {
+    color: $TextIcons_Color !important;
+  }
+
+  nav {
+    background-color: $Primary_Color !important;
+    padding: 1.2rem;
+  }
+
+  h5 {
+    margin-bottom: 4px;
+  }
+
+  .logo-description {
+    font-size: 0.75rem;
+  }
+
+  .logo-img {
+    height: 75px;
+  }
+
+  @media screen and(min-width:2560px) {
+    .h5 {
+      font-size: 3rem;
+    }
+
+    .logo-img {
+      height: 125px;
+    }
+
+    .logo-description {
+      font-size: 2rem;
+    }
+
+    .nav-item {
+      font-size: 2rem;
+    }
+  }
+
+  @media all and (max-width: 420px) {
+    .h5 {
+      font-size: 0.85rem;
+    }
+
+    .logo-description {
+      display: none;
+    }
+
+    .navbar-toggler {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .about {
+    margin-top: 113px;
+    width: 100%;
+
+    .store-info {
+      font-family: $Heading_Font;
+      color: $Primary_Text;
+      position: absolute;
+      top: 50%;
+      z-index: 10;
+    }
+
+    .h4 {
+      font-weight: 700;
+      margin-bottom: 5rem;
+      letter-spacing: 2px;
+      ;
+    }
+
+    .display-4 {
+      margin-bottom: 2rem;
+    }
+
+    .store-description {
+      font-family: Regular_Font;
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 1.3rem;
+      padding: 0px 20rem;
+      text-shadow: 6px 5px 10px rgba(250, 250, 250, 0.6);
+
+    }
+
+    @media screen and(min-width:2560px) {
+      .store-info {
+        top: 25%;
+      }
+
+      .display-4 {
+        font-size: 10rem;
+      }
+
+      .h4 {
+        font-size: 5rem;
+      }
+
+      .store-description {
+        font-size: 2.5rem;
+        line-height: 1.4;
+      }
+    }
+
+    @media screen and(max-width:1440px) {
+      .store-info {
+        top: 30%;
+      }
+
+      .store-description {
+        font-weight: 400;
+        font-size: 1.5rem;
+      }
+    }
+
+    @media screen and(max-width: 1024px) {
+      .store-info {
+        top: 20%;
+      }
+
+      .store-description {
+        font-size: 0.9rem;
+        padding: 0 10rem;
+      }
+    }
+
+    @media screen and(max-width: 700px) {
+      .store-info {
+        top: 20%
+      }
+
+      .display-4 {
+        font-size: 5vw;
+        margin-bottom: 2vw;
+      }
+
+      .h4 {
+        font-size: 2.5vw;
+        margin-bottom: 4vw;
+      }
+
+      .store-description {
+        font-size: 1vw;
+        line-height: 1.2;
+        text-align: justify !important;
+        padding: 0 5rem;
+      }
+    }
+  }
+
+  .about-video {
+    min-height: 20vh;
+    background-color: $Accent_Color; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .btn {
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+    }
+
+    .iframe-toggle {
+      position: relative;
+      width: 80%;
+      padding-bottom: 56.25%;
+      height: 0;
+      display: none;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+      }
+    }
+
+    @media screen and(min-width: 2560px) {
+      .about-video {
+        min-height: 10vh;
+      }
+    }
+  }
+
+  .products {
+
+    .row {
+      margin: 10vh;
+    }
+    .product-item {
+      height: 20vh;
+      background-color: $BG-Color-2;
+      margin-bottom: 1vh;
+    }
+    .h6, .product-price{
+      font-family: $Regular_Font;
+      color: darken($Secondary_Text,30);
+    }
+
+    @media screen and(max-width:768px){
+      .row {
+        margin: 2vh !important;
+      }
+      .col-md-4 {
+        margin-bottom: 2vh;
+      }
+    }
+  }
+
+  .featuring-brands {
+    .row {
+      margin: 10vh;
+    }
+    .col-md-6 {
+      display: flex;
+    }
+    .brand-logo {
+      height: 0.5vh !important;
+      @include respImg;
+    }
+  }
+}
