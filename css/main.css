@@ -15122,6 +15122,10 @@ readers do not read off random characters that represent icons */
   color: #676b49;
 }
 
+.container-fluid .featuring-brands .col-md-6 {
+  margin-bottom: 15vh;
+}
+
 @media screen and (max-width: 374px) {
   .container-fluid .featuring-brands .row {
     margin-left: 15px;

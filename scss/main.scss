@@ -252,7 +252,9 @@
     .brand-name {
       color: $Secondary_Text;
     }
-
+    .col-md-6 {
+      margin-bottom: 15vh;
+    }
 
     @media screen and(max-width: 374px) {
       .row {
