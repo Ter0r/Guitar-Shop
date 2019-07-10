@@ -14900,7 +14900,7 @@ readers do not read off random characters that represent icons */
 }
 
 .container-fluid nav {
-  background-color: #26282d !important;
+  background-color: #060606 !important;
   padding: 1.2rem;
 }
 
@@ -15175,7 +15175,7 @@ readers do not read off random characters that represent icons */
 
 .container-fluid .footer .form-group .button-submit {
   width: 100%;
-  background-color: #26282d;
+  background-color: #060606;
   border: none;
   color: #ffffff;
   padding: 0.58vh 0;
