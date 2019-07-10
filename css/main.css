@@ -15088,7 +15088,7 @@ readers do not read off random characters that represent icons */
 }
 
 .container-fluid .products .product-item {
-  height: 20vh;
+  min-height: 25vh;
   background-color: #dbc8be;
   margin-bottom: 1vh;
 }
@@ -15194,8 +15194,8 @@ readers do not read off random characters that represent icons */
   color: #ffffff;
   padding: 0.58vh 0;
   margin-bottom: 2vh;
-  -webkit-transition: 500ms;
-  transition: 500ms;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 .container-fluid .footer .form-group .button-submit:hover {
@@ -15203,7 +15203,7 @@ readers do not read off random characters that represent icons */
 }
 
 .container-fluid .footer .form-group .button-submit:active {
-  color: #b3b3b3;
+  background-color: #67a7fc;
 }
 
 .container-fluid .footer .social {
@@ -15217,6 +15217,21 @@ readers do not read off random characters that represent icons */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.container-fluid .footer .social .social-buttons a {
+  color: #000000 !important;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.container-fluid .footer .social .social-buttons a:hover {
+  opacity: 0.7;
+}
+
+.container-fluid .footer .social .social-buttons a:active {
+  opacity: 1;
+  color: #67a7fc !important;
 }
 
 .container-fluid .footer .social .social-item {

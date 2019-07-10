@@ -215,9 +215,10 @@
     }
 
     .product-item {
-      height: 20vh;
+      min-height: 25vh;
       background-color: $BG-Color-2;
       margin-bottom: 1vh;
+
     }
 
     .h6,
@@ -330,14 +331,14 @@
         color: $Accent_Color;
         padding: 0.58vh 0;
         margin-bottom: 2vh;
-        transition: 500ms;
+        transition: 200ms;
 
         &:hover {
           opacity: 0.8;
         }
 
         &:active {
-          color: darken($Accent_Color, 30);
+          background-color: #67a7fc;
         }
       }
 
@@ -349,6 +350,17 @@
       .social-buttons {
         display: flex;
         justify-content: center;
+        a {
+          color: #000000 !important;
+          transition: 200ms;
+          &:hover {
+            opacity: 0.7;
+          }
+          &:active {
+            opacity: 1;
+            color: #67a7fc !important;
+          }
+        }
       }
 
       .social-item {
