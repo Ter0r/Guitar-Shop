@@ -14887,7 +14887,7 @@ readers do not read off random characters that represent icons */
 .container-fluid {
   padding-right: 0;
   padding-left: 0;
-  font-family: "Raleway" sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .container-fluid header {
@@ -15091,9 +15091,10 @@ readers do not read off random characters that represent icons */
   margin-bottom: 1vh;
 }
 
-.container-fluid .products .h6, .container-fluid .products .product-price {
-  font-family: "Raleway" sans-serif;
-  color: #9ca082;
+.container-fluid .products .h6,
+.container-fluid .products .product-price {
+  font-family: "Raleway", sans-serif;
+  color: #0f100b;
 }
 
 @media screen and (max-width: 768px) {
@@ -15109,16 +15110,102 @@ readers do not read off random characters that represent icons */
   margin: 10vh;
 }
 
-.container-fluid .featuring-brands .col-md-6 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.container-fluid .featuring-brands .brand-logo {
-  height: 0.5vh !important;
+.container-fluid .featuring-brands .brand-img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.container-fluid .featuring-brands .brand-name {
+  color: #676b49;
+}
+
+@media screen and (max-width: 374px) {
+  .container-fluid .featuring-brands .row {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .container-fluid .featuring-brands .brand-description {
+    font-size: 0.85rem;
+  }
+}
+
+.container-fluid .working-schedule .row {
+  margin: 3vh 4vw 4vh 4vw;
+}
+
+.container-fluid .working-schedule .col {
+  background: url("../img/background-guitar.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  min-height: 30vh;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  text-shadow: -2px 0px 0px #c30a0a;
+}
+
+.container-fluid .working-schedule .schedule-title {
+  font-size: 3rem;
+}
+
+.container-fluid .working-schedule h5 {
+  font-size: 1.75rem;
+}
+
+.container-fluid .working-schedule .schedule-container {
+  margin-top: 8vh;
+}
+
+.container-fluid .footer .form-group {
+  font-family: "Raleway", sans-serif;
+}
+
+.container-fluid .footer .form-group .form-label {
+  font-size: 2rem;
+}
+
+.container-fluid .footer .form-group .form-control {
+  border: 1px solid #000000;
+  border-radius: 0;
+  margin-bottom: 1vh;
+}
+
+.container-fluid .footer .form-group .button-submit {
+  width: 100%;
+  background-color: #26282d;
+  border: none;
+  color: #ffffff;
+  padding: 0.58vh 0;
+  margin-bottom: 2vh;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.container-fluid .footer .form-group .button-submit:hover {
+  opacity: 0.8;
+}
+
+.container-fluid .footer .form-group .button-submit:active {
+  color: #b3b3b3;
+}
+
+.container-fluid .footer .social {
+  margin-bottom: 2vh;
+}
+
+.container-fluid .footer .social .social-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-fluid .footer .social .social-item {
+  margin-right: 3vw;
 }
 /*# sourceMappingURL=main.css.map */

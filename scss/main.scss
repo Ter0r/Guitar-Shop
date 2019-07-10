@@ -1,10 +1,10 @@
 /* Project imports */
 @import "mixins";
 @import "custom_variables";
-@import "/home/porfirev/internature/my-proj/Guitar Custom Shop/bootstrap/scss/bootstrap.scss";
-@import "/home/porfirev/internature/my-proj/Guitar Custom Shop/fontawesome/scss/fontawesome.scss";
-@import "/home/porfirev/internature/my-proj/Guitar Custom Shop/fontawesome/scss/solid.scss";
-@import "/home/porfirev/internature/my-proj/Guitar Custom Shop/fontawesome/scss/brands.scss";
+@import "../bootstrap/scss/bootstrap.scss";
+@import "../fontawesome/scss/fontawesome.scss";
+@import "../fontawesome/scss/solid.scss";
+@import "../fontawesome/scss/brands.scss";
 
 
 
@@ -173,7 +173,7 @@
 
   .about-video {
     min-height: 20vh;
-    background-color: $Accent_Color; 
+    background-color: $Accent_Color;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,20 +212,24 @@
     .row {
       margin: 10vh;
     }
+
     .product-item {
       height: 20vh;
       background-color: $BG-Color-2;
       margin-bottom: 1vh;
     }
-    .h6, .product-price{
+
+    .h6,
+    .product-price {
       font-family: $Regular_Font;
-      color: darken($Secondary_Text,30);
+      color: darken($Secondary_Text, 30);
     }
 
-    @media screen and(max-width:768px){
+    @media screen and(max-width:768px) {
       .row {
         margin: 2vh !important;
       }
+
       .col-md-4 {
         margin-bottom: 2vh;
       }
@@ -236,12 +240,103 @@
     .row {
       margin: 10vh;
     }
-    .col-md-6 {
-      display: flex;
+
+    .brand-img {
+      display: block;
+      max-width: 100%;
+      height: auto;
     }
-    .brand-logo {
-      height: 0.5vh !important;
-      @include respImg;
+
+    .brand-name {
+      color: $Secondary_Text;
+    }
+
+
+    @media screen and(max-width: 374px) {
+      .row {
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+
+      .brand-description {
+        font-size: 0.85rem;
+      }
+    }
+  }
+
+  .working-schedule {
+    .row {
+      margin: 3vh 4vw 4vh 4vw;
+    }
+
+    .col {
+      background: url("../img/background-guitar.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      min-height: 30vh;
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: $Accent_Color;
+      font-family: $Heading_Font;
+      text-shadow: -2px 0px 0px #c30a0a;
+    }
+
+    .schedule-title {
+      font-size: 3rem;
+    }
+
+    h5 {
+      font-size: 1.75rem;
+    }
+
+    .schedule-container {
+      margin-top: 8vh;
+    }
+  }
+
+  .footer {
+    .form-group {
+     font-family: $Regular_Font;
+
+     .form-label {
+       font-size: 2rem;
+     }
+     .form-control {
+       border: 1px solid #000000;
+       border-radius: 0;
+       margin-bottom: 1vh;
+     }
+     .button-submit {
+        width: 100%;
+        background-color: $Primary_Color;
+        border: none;
+        color: $Accent_Color;
+        padding: 0.58vh 0;
+        margin-bottom: 2vh;
+        transition: 500ms;
+
+        &:hover {
+          opacity: 0.8;
+        }
+        &:active {
+          color: darken($Accent_Color, 30);
+        }
+      }
+
+    }
+
+    .social {
+      margin-bottom: 2vh;
+
+      .social-buttons {
+        display: flex;
+        justify-content: center;
+      }
+
+      .social-item {
+        margin-right: 3vw;
+      }
     }
   }
 }
